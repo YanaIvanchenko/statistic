@@ -34,8 +34,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedNumber = 8;
-        long actualNumber = service.getMaxMonth(sales);
+        int expectedNumber = 8;
+        int actualNumber = service.getMaxMonth(sales);
 
         Assertions.assertEquals(expectedNumber, actualNumber);
     }
@@ -46,8 +46,8 @@ public class StatsServiceTest {
 
         long[] sales = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
 
-        long expectedNumber = 9;
-        long actualNumber = service.getMinMonth(sales);
+        int expectedNumber = 9;
+        int actualNumber = service.getMinMonth(sales);
 
         Assertions.assertEquals(expectedNumber, actualNumber);
     }
